@@ -11,7 +11,7 @@
             $fileExt = explode(".", $fileName);
             $fileActualExt = strtolower(end($fileExt));
             $fileDestination = "uploads/$fileName";
-            $allowedFileTypes = ['jpg', 'jpeg', 'gif', 'png', 'pdf'];
+            $allowedFileTypes = ['jpg', 'jpeg', 'gif', 'png'];
                 if (empty($fileName)) {
                      header("Location: index.php?error=file_upload_empty");
                         exit();
